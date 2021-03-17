@@ -27,7 +27,8 @@ phases:
     commands:
       - echo build started on `date`
       - echo testing code with sonar
-      - mvn clean install -D"sonar.login"=$LOGIN -D"sonar.host.url"=$HOST -D"sonar.projectKey"=$Project -D"sonar.organization"=$Organization
+     # - mvn clean install -D"sonar.login"=$LOGIN -D"sonar.host.url"=$HOST -D"sonar.projectKey"=$Project -D"sonar.organization"=$Organization
+      - mvn clean package sonar:sonar -Dsonar.host.url=https://sonarcloud.io -Dsonar.organization=fa4 -Dsonar.login=6a26eca7098a8c21687212cc96f4d5c02e9e70f2
       - sleep 5
       - curl https://sonarcloud.io/api/qualitygates/project_status?projectKey=$Project >result.json
       - cat result.json
