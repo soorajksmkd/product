@@ -1,4 +1,4 @@
-FROM openjdk:11.0-jdk-slim
+FROM openjdk:15
 VOLUME /tmp
 COPY /target/product-0.0.1-SNAPSHOT.jar /usr/app/
 WORKDIR /usr/app
