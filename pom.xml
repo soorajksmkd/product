@@ -16,7 +16,7 @@
 	<name>ProductServiceMS</name>
 	<description>Product Service MS</description>
 	<properties>
-		<java.version>15</java.version>
+		<java.version>11</java.version>
 		<sonar.projectKey>soorajksmkd_product</sonar.projectKey>
 		<sonar.organization>fa4</sonar.organization>
 		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
